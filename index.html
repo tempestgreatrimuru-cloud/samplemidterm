@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+
+  <title>WebPortfolio || Pedrosa</title>
+</head>
+<body>
+  
+  
+  </header>
+  <div class="bg-animation"></div>
+
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#labs">Laboratory</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      <button id="theme-toggle" aria-label="Toggle Theme">
+  <i class="fas fa-moon"></i>
+</button>
+  </nav>
+
+  <header id="hero">
+    <div class="hero-content">
+      <h2>PORTFOLIO</h2>
+      <h1>Jimmy B. Pedrosa Jr.</h1>
+      <p>Crafting elegant solutions through code, one project at a time</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+
+    
+  </header>
+
+  <section id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-container fade-in">
+    <div class="about-left fade-in-up">
+      <img src="image/DP.jpg" alt="Jimmy B. Pedrosa Jr." class="about-img"
+           onerror="this.src='https:/via.placeholder.com/350x400/6366f1/ffffff?text=JP'">
+    </div>
+
+    <div class="about-right fade-in-up" style="animation-delay: 0.3s;">
+      <h3>Hello! I'm Jimmy 👋</h3>
+      <p>
+        I'm a <strong>Bachelor of Science in Information Technology (BSIT)</strong> student at
+        <strong>Davao del Sur State College</strong>, passionate about creating innovative and user-friendly digital solutions.
+      </p>
+      <p>
+        I specialize in <strong>web development</strong>, <strong>database management</strong>, and
+        <strong>software design</strong>. My goal is to build functional, elegant systems that make life easier for users.
+      </p>
+      <a href="image/resume.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+    </div>
+  </div>
+
+  <!-- 🎞️ Album Section -->
+  <div class="album-section">
+    <!-- Album 1 -->
+    <div class="album glass-card">
+      <h3>📸 My Photos</h3>
+      <p class="album-desc">
+        A glimpse into my everyday life — smiles, memories, and little moments that define me.
+      </p>
+      <div class="album-gallery scrollable">
+        <img src="image/me8.jpg" alt="My Photo 1" onclick="openZoom(this)">
+        <img src="image/me7.jpg" alt="My Photo 2" onclick="openZoom(this)">
+        <img src="image/me10.jpg" alt="My Photo 3" onclick="openZoom(this)">
+      </div>
+    </div>
+
+    <!-- Album 2 -->
+    <div class="album glass-card">
+      <h3>🎨 My Interests</h3>
+      <p class="album-desc">
+        Where I find peace — nature, chill rides, and of course, my love for cats.
+      </p>
+      <div class="album-gallery scrollable">
+        <img src="image/me1.jpg" alt="Interest 1" onclick="openZoom(this)">
+        <video controls muted onclick="openZoom(this)">
+          <source src="image/vid1.mp4" type="video/mp4">
+        </video>
+        <img src="image/interest.jpg" alt="Interest 2" onclick="openZoom(this)">
+        <img src="image/me4.jpg" alt="Interest 3" onclick="openZoom(this)">
+        <img src="image/cat4.jpg" alt="Interest 4" onclick="openZoom(this)">
+      </div>
+    </div>
+
+    <!-- Album 3 -->
+    <div class="album glass-card">
+      <h3>💖 Love Interest</h3>
+      <p class="album-desc">
+        Someone special who inspires and brings warmth to my life — moments I’ll always treasure.
+      </p>
+      <div class="album-gallery scrollable">
+        <img src="image/aliksa.jpg" alt="Love Interest 1" onclick="openZoom(this)">
+        <img src="image/aliksa2.jpg" alt="Love Interest 2" onclick="openZoom(this)">
+        <img src="image/aliksa3.jpg" alt="Love Interest 3" onclick="openZoom(this)">
+      </div>
+    </div>
+  </div>
+
+  <!-- 🖼️ Zoom Modal -->
+  <div id="zoomModal" class="zoom-modal" onclick="closeZoom()">
+    <span class="close-zoom">&times;</span>
+    <img id="zoomImage" class="zoom-content" alt="">
+    <video id="zoomVideo" class="zoom-content" controls></video>
+  </div>
+</section>
+
+
+<section id="skills" class="skills">
+  <h2 class="skills-title">My Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+      <p>MySQL</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+      <p>C#</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+      <p>ChatGPT</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+      <p>Laravel</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ✅ FIXED LABORATORY SECTION -->
+ <section id="labs" class="laboratory-section">
+  <h2 class="section-title">Laboratory Activities</h2>
+
+  <div class="slider-wrapper">
+    <button class="scroll-btn left" onclick="scrollLab(-1)">&#10094;</button>
+
+    <div class="lab-slider" id="labSlider">
+      <div class="lab-card">
+        <h3>Activity 1</h3>
+        <p>Basic HTML structure showcasing headings, paragraphs, and images.</p>
+        <div class="lab-buttons">
+          <button onclick="showCode('activity1')">View Code</button>
+          <a href="codes/activity1.html" target="_blank" class="btn-demo">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="lab-card">
+        <h3>Activity 2</h3>
+        <p>HTML forms and input elements with form validation.</p>
+        <div class="lab-buttons">
+          <button onclick="showCode('activity2')">View Code</button>
+          <a href="codes/activity2.html" target="_blank" class="btn-demo">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="lab-card">
+        <h3>Activity 3</h3>
+        <p>CSS styling and layout techniques demonstration.</p>
+        <div class="lab-buttons">
+          <button onclick="showCode('activity3')">View Code</button>
+          <a href="codes/activity3.html" target="_blank" class="btn-demo">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="lab-card">
+        <h3>Activity 4</h3>
+        <p>Responsive web design practice using Flexbox and Grid.</p>
+        <div class="lab-buttons">
+          <button onclick="showCode('activity4')">View Code</button>
+          <a href="codes/activity4.html" target="_blank" class="btn-demo">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="lab-card">
+        <h3>Activity 5</h3>
+        <p>JavaScript fundamentals with interactive page features.</p>
+        <div class="lab-buttons">
+          <button onclick="showCode('activity5')">View Code</button>
+          <a href="codes/activity5.html" target="_blank" class="btn-demo">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollLab(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+  <section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+
+
+  <div class="project-slider" id="projectSlider">
+    <!-- Project 1 -->
+    <div class="project-card" onclick="openProjectModal('project1')">
+      <img src="image/Pedrosa_BSIT3A.png" alt="JP Fitness Web">
+      <h3>JP Fitness Web</h3>
+      <p>A fitness-themed website built using Wix that features workout plans, progress tracking, and membership content.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card" onclick="openProjectModal('project2')">
+      <img src="image/POSTER.png" alt="iPhone 17 Promotional Poster">
+      <h3>iPhone 17 Promotional Poster</h3>
+      <p>A modern promotional poster concept for the iPhone 17, designed using Canva with a focus on sleek visuals and branding.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card" onclick="openProjectModal('project3')">
+      <img src="image/FP.png" alt="Food Ordering System">
+      <h3>Laravel Project | Food Ordering System</h3>
+      <p>A web application for ordering food, featuring menu selection, cart, and order placement functionality.</p>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-wrapper">
+    <!-- LEFT SIDE: CONTACT INFO -->
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:tempestgreatrimuru@gmail.com">tempestgreatrimuru@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p><a href="tel:+63991519763">+63 991 1519 763</a></p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Location</h4>
+          <p>Digos City, Davao del Sur, Philippines</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fab fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/tempestgreatrimuru-cloud" target="_blank">github.com/jimmybpedrosa</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: CONTACT FORM -->
+    <form action="https://formspree.io/f/mqaynjrq" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Modal for Project Preview -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProjectModal()">&times;</span>
+    <div id="projectModalBody"></div>
+  </div>
+</div>
+
+
+  <!-- Modal for Code Display -->
+  <!-- <div id="codeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <pre><code id="codeDisplay"></code></pre>
+    </div>
+  </div> -->
+
+  <!-- Modal -->
+<div id="codeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2 id="codeTitle">Activity</h2>
+
+    <!-- Scrollable code section -->
+    <pre id="codeDisplay" class="scrollable-code"><code></code></pre>
+
+    <!-- Run button -->
+    <button class="btn btn-primary" onclick="runCode()">Run Code</button>
+
+    <!-- Live preview -->
+    <iframe id="codePreview" class="code-preview"></iframe>
+  </div>
+</div>
+
+
+  <!-- ✅ LINK TO JS FILE -->
+  <script src="script.js"></script>
+
+  <footer class="glass-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Jimmy B. Pedrosa Jr. | All Rights Reserved</p>
+
+    <div class="social-links">
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
